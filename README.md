@@ -1,4 +1,4 @@
-# 💻 pc-performance- Meu projeto-mill
+# 💻 pc-performance- Meu projeto-new
 
 Projeto focado em análise, monitoramento e **dicas para melhorar o desempenho de computadores**.
 
