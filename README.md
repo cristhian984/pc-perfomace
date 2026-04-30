@@ -1,4 +1,4 @@
-# 💻 pc-performance
+# 💻 pc-performance- Meu projeto
 
 Projeto focado em análise, monitoramento e **dicas para melhorar o desempenho de computadores**.
 
