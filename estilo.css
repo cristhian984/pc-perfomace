@@ -79,3 +79,19 @@ div {
 section {
     text-align: center;
 }
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom:20px;
+    border-radius: 10px;
+}
+.card {
+    background: #01204d;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
