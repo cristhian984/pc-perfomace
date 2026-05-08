@@ -1,53 +1,122 @@
-.itel{
-            color:blue
-        }
-        .r{
-            color: rgb(7, 1, 1);
-        }
-        .g{
-            color: green;
-        }
-        table {
-            text-align: center;
-            
-        }
-        .preto {
-            color: black;
-        }
-        .branco{
-            color: white;
-        }
-        
-    body {
-        background-color: rgb(255, 255, 255);
-    
-    }
-    header {
-        background-color: rgb(7, 25, 194);
-        box-shadow: 0px 3px 10px rgb(0, 0, 0);
-    
-        
-    
-    } 
-    
-     body {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.itel {
+    color: blue
+}
+
+.r {
+    color: rgb(7, 1, 1);
+}
+
+.g {
+    color: green;
+}
+
+table {
+    text-align: center;
+
+}
+
+.preto {
+    color: black;
+}
+
+.branco {
+    color: white;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+
+}
+
+header {
+    background-color: rgb(7, 25, 194);
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
+
+
+
+
+}
+
+body {
     background-color: #0f172a;
     color: white;
     font-family: Arial;
-  }
+}
 
-  nav {
+nav {
     background-color: #020617;
-    padding: 10px;
-  }
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
-  nav a {
+nav a {
     color: #38bdf8;
     margin-right: 15px;
     text-decoration: none;
     text-align: center;
-  }
+    font-size: medium;
+}
 
-  nav a:hover {
+nav a:hover {
     color: rgb(255, 255, 255);
-  }
+}
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #020617;
+}
+
+div {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+.card {
+    background: #01204d;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+
+}
+
+.carousel article {
+    margin-top: 20px;
+}
+
+.carousel img {
+    border-radius: 10px;
+    width: 70%;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.card a:hover {
+    color: #3174d9;
+
+}
