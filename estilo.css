@@ -98,6 +98,8 @@ section {
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 10px;
+   
+
 
 
 }
@@ -119,4 +121,10 @@ section {
 .card a:hover {
     color: #3174d9;
 
+}
+    .card:hover{
+transform:scale(1.20);
+}
+html{
+scroll-behavior:smooth;
 }
