@@ -28,10 +28,6 @@ table {
     color: white;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-
-}
 
 header {
     background-color: rgb(7, 25, 194);
@@ -46,6 +42,9 @@ body {
     background-color: #0f172a;
     color: white;
     font-family: Arial;
+    background-image: url(img-2-fundo.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 nav {
@@ -98,7 +97,7 @@ section {
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 10px;
-   
+
 
 
 
@@ -122,9 +121,11 @@ section {
     color: #3174d9;
 
 }
-    .card:hover{
-transform:scale(1.20);
+
+.card:hover {
+    transform: scale(1.20);
 }
-html{
-scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
