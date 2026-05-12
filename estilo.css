@@ -4,7 +4,7 @@
 }
 
 .itel {
-    color: blue
+    color: rgb(9, 90, 144)
 }
 
 .r {
@@ -124,9 +124,56 @@ section {
 }
 
 .card:hover {
-    transform: scale(1.20);
+    transform: scale(1.05);
 }
 
 html {
     scroll-behavior: smooth;
+}
+form {
+    background-color: #0951a8a6;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+form .titulo-checkbox {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(0, 42, 167);
+    color: white;
+    cursor: pointer;
+
+}
+article a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.center {
+    text-align: center;
 }

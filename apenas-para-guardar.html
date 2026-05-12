@@ -1,151 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PC Performance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      background-color: #0f172a;
-      color: white;
-      font-family: Arial;
-      margin: 0;
-    }
+<title>PC Performance</title>
 
-    nav {
-      background-color: #020617;
-      padding: 15px;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    nav a {
-      color: #38bdf8;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+<style>
 
-    nav a:hover {
-      color: white;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    header {
-      text-align: center;
-      padding: 50px 20px;
-    }
+body{
+    font-family:'Poppins', sans-serif;
+    background:
+    radial-gradient(circle at top,#1e3a8a,#020617);
+    color:white;
+    overflow-x:hidden;
+}
 
-    header h1 {
-      font-size: 40px;
-      color: #38bdf8;
-    }
+/* NAVBAR */
 
-    section {
-      padding: 30px;
-      text-align: center;
-    }
+nav{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
 
-    .card {
-      background-color: #020617;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      transition: 0.3s;
-    }
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-    .card:hover {
-      transform: scale(1.05);
-      background-color: #1e293b;
-    }
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#60a5fa;
+}
 
-    .card a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #020617;
-      margin-top: 30px;
-    }
-  </style>
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+    min-height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:40px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+    color:#93c5fd;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:0.9;
+    line-height:1.8;
+}
+
+/* CARDS */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+    padding:30px;
+
+    backdrop-filter:blur(12px);
+
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#60a5fa;
+
+    box-shadow:0 0 30px rgba(96,165,250,0.4);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#93c5fd;
+    font-size:26px;
+}
+
+.card p{
+    line-height:1.8;
+    opacity:0.9;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(255,255,255,0.03);
+    margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="montagem.html">Montagem</a>
-    <a href="memoria-ram.html">RAM</a>
-    <a href="placa-mae.html">Placa-mãe</a>
-    <a href="placa-video.html">Placa de vídeo</a>
-    <a href="manutencao.html">Manutenção</a>
-  </nav>
+<nav>
+    <div class="logo">PC Performance</div>
 
-  <header>
-    <h1>PC Performance 🚀</h1>
-    <p>Aprenda a montar, melhorar e turbinar seu computador</p>
-  </header>
+    <ul>
+        <li><a href="">Processador</a></li>
+        <li><a href="">RAM</a></li>
+        <li><a href="">SSD</a></li>
+        <li><a href="">GPU</a></li>
+    </ul>
+</nav>
 
-  <section>
-    <h2>🔥 Comece por aqui</h2>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Processadores</h1>
+
+        <p>
+            O processador é o cérebro do computador.
+            Escolher a CPU certa melhora desempenho em jogos,
+            produtividade, programação e multitarefa.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="container">
 
     <div class="cards">
 
-      <div class="card">
-        <h3>Montagem</h3>
-        <p>Aprenda a montar seu PC do zero</p>
-        <a href="montagem.html">Ver mais</a>
-      </div>
+        <div class="card">
+            <h2>🧠 Núcleos e Threads</h2>
 
-      <div class="card">
-        <h3>Memória RAM</h3>
-        <p>Entenda como melhorar desempenho</p>
-        <a href="memoria-ram.html">Ver mais</a>
-      </div>
+            <p>
+                Mais núcleos significam melhor multitarefa.
+                Ideal para jogos, edição de vídeo e aplicações pesadas.
+            </p>
+        </div>
 
-      <div class="card">
-        <h3>Placa de vídeo</h3>
-        <p>Mais FPS nos seus jogos</p>
-        <a href="placa-video.html">Ver mais</a>
-      </div>
+        <div class="card">
+            <h2>⚡ Frequência</h2>
 
-      <div class="card">
-        <h3>Placa-mãe</h3>
-        <p>A base do seu computador</p>
-        <a href="placa-mae.html">Ver mais</a>
-      </div>
+            <p>
+                Frequências maiores oferecem respostas mais rápidas
+                em jogos e tarefas do dia a dia.
+            </p>
+        </div>
 
-      <div class="card">
-        <h3>Manutenção</h3>
-        <p>Deixe seu PC sempre rápido</p>
-        <a href="manutencao.html">Ver mais</a>
-      </div>
+        <div class="card">
+            <h2>🔥 Consumo (TDP)</h2>
+
+            <p>
+                CPUs mais potentes consomem mais energia
+                e precisam de refrigeração melhor.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>💾 Cache</h2>
+
+            <p>
+                O cache funciona como memória ultrarrápida,
+                aumentando o desempenho da CPU.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🛠 Compatibilidade</h2>
+
+            <p>
+                Verifique soquete, BIOS e suporte da memória RAM
+                antes de comprar um processador.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎮 Desempenho em Jogos</h2>
+
+            <p>
+                Jogos competitivos geralmente preferem CPUs
+                com frequência alta e bom cache.
+            </p>
+        </div>
 
     </div>
-  </section>
 
-  <section>
-    <h2>💡 Dicas rápidas</h2>
-    <p>✔ Use SSD para mais velocidade</p>
-    <p>✔ Tenha pelo menos 8GB de RAM</p>
-    <p>✔ Limpe arquivos desnecessários</p>
-  </section>
+</section>
 
-  <footer>
-    <p>© 2026 PC Performance - Criado por Cristhian</p>
-  </footer>
+<footer>
+    © 2026 PC Performance
+</footer>
 
 </body>
-
 </html>
