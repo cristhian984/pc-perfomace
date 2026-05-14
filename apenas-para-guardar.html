@@ -1,249 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PC Performance</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<title>Card com tamanho ajustado</title>
 <style>
+    /* Reset básico */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-body{
-    font-family:'Poppins', sans-serif;
-    background:
-    radial-gradient(circle at top,#1e3a8a,#020617);
-    color:white;
-    overflow-x:hidden;
-}
+    /* Card */
+    .card {
+        width: 300px; /* Largura fixa */
+        height: 400px; /* Altura fixa */
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
 
-/* NAVBAR */
+    .card img {
+        width: 100%;
+        height: 200px; /* Altura da imagem */
+        object-fit: cover; /* Mantém proporção cortando excesso */
+    }
 
-nav{
-    width:100%;
-    padding:20px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    .card-content {
+        padding: 15px;
+        flex: 1;
+    }
 
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(10px);
-
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:#60a5fa;
-}
-
-nav ul{
-    display:flex;
-    gap:30px;
-    list-style:none;
-}
-
-nav a{
-    text-decoration:none;
-    color:white;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#60a5fa;
-}
-
-/* HERO */
-
-.hero{
-    min-height:70vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    padding:40px;
-}
-
-.hero-content{
-    max-width:900px;
-}
-
-.hero h1{
-    font-size:60px;
-    margin-bottom:20px;
-    color:#93c5fd;
-}
-
-.hero p{
-    font-size:20px;
-    opacity:0.9;
-    line-height:1.8;
-}
-
-/* CARDS */
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding-bottom:80px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.08);
-
-    border-radius:25px;
-    padding:30px;
-
-    backdrop-filter:blur(12px);
-
-    transition:0.3s;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    border-color:#60a5fa;
-
-    box-shadow:0 0 30px rgba(96,165,250,0.4);
-}
-
-.card h2{
-    margin-bottom:15px;
-    color:#93c5fd;
-    font-size:26px;
-}
-
-.card p{
-    line-height:1.8;
-    opacity:0.9;
-}
-
-/* FOOTER */
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:rgba(255,255,255,0.03);
-    margin-top:40px;
-}
-
+    /* Responsividade */
+    @media (max-width: 500px) {
+        .card {
+            width: 90%; /* Ocupa quase toda a tela no celular */
+            height: auto; /* Altura automática */
+        }
+        .card img {
+            height: auto;
+        }
+    }
 </style>
 </head>
-
 <body>
 
-<nav>
-    <div class="logo">PC Performance</div>
-
-    <ul>
-        <li><a href="">Processador</a></li>
-        <li><a href="">RAM</a></li>
-        <li><a href="">SSD</a></li>
-        <li><a href="">GPU</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>Processadores</h1>
-
-        <p>
-            O processador é o cérebro do computador.
-            Escolher a CPU certa melhora desempenho em jogos,
-            produtividade, programação e multitarefa.
-        </p>
-
+<div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Imagem do Card">
+    <div class="card-content">
+        <h3>Título do Card</h3>
+        <p>Este é um exemplo de card com tamanho ajustado usando HTML e CSS.</p>
     </div>
-
-</section>
-
-<section class="container">
-
-    <div class="cards">
-
-        <div class="card">
-            <h2>🧠 Núcleos e Threads</h2>
-
-            <p>
-                Mais núcleos significam melhor multitarefa.
-                Ideal para jogos, edição de vídeo e aplicações pesadas.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>⚡ Frequência</h2>
-
-            <p>
-                Frequências maiores oferecem respostas mais rápidas
-                em jogos e tarefas do dia a dia.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>🔥 Consumo (TDP)</h2>
-
-            <p>
-                CPUs mais potentes consomem mais energia
-                e precisam de refrigeração melhor.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>💾 Cache</h2>
-
-            <p>
-                O cache funciona como memória ultrarrápida,
-                aumentando o desempenho da CPU.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>🛠 Compatibilidade</h2>
-
-            <p>
-                Verifique soquete, BIOS e suporte da memória RAM
-                antes de comprar um processador.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>🎮 Desempenho em Jogos</h2>
-
-            <p>
-                Jogos competitivos geralmente preferem CPUs
-                com frequência alta e bom cache.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-    © 2026 PC Performance
-</footer>
+</div>
 
 </body>
 </html>
