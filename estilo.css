@@ -185,3 +185,24 @@ article a {
 .center {
     text-align: center;
 }
+.conteudo-ram{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.cards-esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.banner-ram img{
+    width: 1500px;
+    height: 500px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: blue;
+    margin-top: 50px;
+    
+}
