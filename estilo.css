@@ -198,11 +198,12 @@ article a {
 }
 
 .banner-ram img{
-    width: 1500px;
+    width: 1000px;
     height: 500px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: blue;
     margin-top: 50px;
+    padding: 40px;
     
 }
