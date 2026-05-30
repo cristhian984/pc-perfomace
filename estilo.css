@@ -260,4 +260,37 @@ th, td{
 th{
     background-color: #003b8b;
 }
+.titulo-comparacao{
+    background: rgba(4, 29, 110, 0.897);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.container-dicas{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.dica{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dica h3{
+    margin-top: 0;
+    color: #007bff;
+}
+
+.dica p{
+    line-height: 1.6;
+    color: black;
+}
+
 
