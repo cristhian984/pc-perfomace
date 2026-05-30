@@ -292,5 +292,31 @@ th{
     line-height: 1.6;
     color: black;
 }
+.periferico{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: black;
+}
+
+.periferico h3{
+    margin-top: 0;
+    color: #007bff;
+}
+.fonte{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.fonte h3{
+    margin-top: 0;
+    color: #007bff;
+}
+
 
 
