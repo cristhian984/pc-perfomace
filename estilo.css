@@ -42,7 +42,7 @@ body {
     background-color: #0f172a;
     color: white;
     font-family: Arial;
-    background-image: url(img-2-fundo.png);
+    background-image: url(img/img-2-fundo.png);
     background-attachment: fixed;
     background-size: cover;
 
@@ -139,7 +139,7 @@ html {
     scroll-behavior: smooth;
 }
 form {
-    background-color: #0951a8a6;
+    background-color: #002858a6;
     padding: 30px;
     border-radius: 12px;
     width: 500px;
@@ -201,16 +201,46 @@ article a {
     width: 1000px;
     height: 500px;
     border-radius: 40px;
-    text-align: center;
-    box-shadow: blue;
-    margin-top: 50px;
-    margin: 0 auto;
+    margin: 50px auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-     max-width: 100%;
-    height: auto;
-     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 180px;
+    
 }
+/*pagina sobre*/
+.sobre {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: black;
+    border-radius: 20px;
+   
+    color: white;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sobre h2 {
+    color: #00aaff;
+    margin-top: 30px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.sobre ul {
+    list-style: none;
+}
+
+.sobre li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
