@@ -244,3 +244,20 @@ article a {
     font-size: 1.1rem;
 }
 
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    color: white;
+}
+
+th, td{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #003b8b;
+}
+
