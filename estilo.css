@@ -45,6 +45,7 @@ body {
     background-image: url(img/img-2-fundo.png);
     background-attachment: fixed;
     background-size: cover;
+    min-height: 100vh;
 
 }
 
@@ -89,7 +90,7 @@ section {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 
 }
@@ -100,7 +101,7 @@ section {
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
     height: 300px;
     overflow: hidden;
@@ -110,7 +111,8 @@ section {
 
 
 }
- 
+
+
 
 .carousel article {
     margin-top: 20px;
@@ -138,6 +140,7 @@ section {
 html {
     scroll-behavior: smooth;
 }
+
 form {
     background-color: #002858a6;
     padding: 30px;
@@ -178,34 +181,38 @@ form button {
     cursor: pointer;
 
 }
+
 article a {
     text-decoration: none;
     color: #ffffff;
 }
+
 .center {
     text-align: center;
 }
-.conteudo-ram{
+
+.conteudo-ram {
     display: flex;
     align-items: flex-start;
     gap: 30px;
 }
 
-.cards-esquerda{
+.cards-esquerda {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.banner-ram img{
+.banner-ram img {
     width: 1000px;
     height: 500px;
     border-radius: 40px;
     margin: 50px auto;
     display: block;
     margin-left: 180px;
-    
+
 }
+
 /*pagina sobre*/
 .sobre {
     width: 80%;
@@ -214,7 +221,7 @@ article a {
     padding: 40px;
     background: black;
     border-radius: 20px;
-   
+
     color: white;
     text-align: center;
 }
@@ -244,23 +251,25 @@ article a {
     font-size: 1.1rem;
 }
 
-table{
+table {
     width: 80%;
     margin: 30px auto;
     border-collapse: collapse;
     color: white;
 }
 
-th, td{
+th,
+td {
     border: 1px solid white;
     padding: 10px;
     text-align: center;
 }
 
-th{
+th {
     background-color: #003b8b;
 }
-.titulo-comparacao{
+
+.titulo-comparacao {
     background: rgba(4, 29, 110, 0.897);
     color: white;
     text-align: center;
@@ -269,43 +278,46 @@ th{
     margin-top: 40px;
     margin-bottom: 15px;
 }
-.container-dicas{
+
+.container-dicas {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
-.dica{
+.dica {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.dica h3{
+.dica h3 {
     margin-top: 0;
     color: #007bff;
 }
 
-.dica p{
+.dica p {
     line-height: 1.6;
     color: black;
 }
-.periferico{
+
+.periferico {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     color: black;
 }
 
-.periferico h3{
+.periferico h3 {
     margin-top: 0;
     color: #007bff;
 }
-.fonte{
+
+.fonte {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: 20px;
@@ -313,10 +325,140 @@ th{
     color: black;
 }
 
-.fonte h3{
+.fonte h3 {
     margin-top: 0;
     color: #007bff;
 }
 
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.banner-gabinete {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.banner-gabinete h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid rgb(0, 183, 255);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.banner-gabinete p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.recomendacoes {
+    width: 80%;
+    margin: auto;
+}
+
+.recomendacoes h2 {
+    margin-bottom: 20px;
+}
+
+.card-gabinete {
+    background-color: rgba(0, 35, 90, 0.9);
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 10px;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.card-gabinete:hover {
+    transform: translateY(10px);
+}
+
+.card-gabinete h3 {
+    margin-bottom: 10px;
+}
+
+.card-gabinete p {
+    line-height: 1.5;
+}
+/* Banner */
+
+.banner-manutencao {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.banner-manutencao h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.banner-manutencao p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Cards */
+
+.tipos-manutencao {
+    width: 80%;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-manutencao {
+    width: 280px;
+
+    background-color: rgba(0, 35, 90, 0.8);
+
+    border: 1px solid rgb(0, 183, 255);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+.card-manutencao h3 {
+    margin-bottom: 15px;
+}
+
+.card-manutencao p {
+    line-height: 1.5;
+}
 
 
+/* Dicas */
+
+.dicas-manutencao {
+    width: 80%;
+
+    margin: 40px auto;
+}
+
+.dicas-manutencao h2 {
+    margin-bottom: 20px;
+}
+
+.dicas-manutencao ul {
+    padding-left: 20px;
+}
+
+.dicas-manutencao li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
