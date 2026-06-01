@@ -387,6 +387,7 @@ main {
 .card-gabinete p {
     line-height: 1.5;
 }
+
 /* Banner */
 
 .banner-manutencao {
@@ -431,7 +432,7 @@ main {
 
     text-align: center;
 
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card-manutencao h3 {
@@ -449,6 +450,7 @@ main {
     width: 80%;
 
     margin: 40px auto;
+
 }
 
 .dicas-manutencao h2 {
@@ -457,9 +459,38 @@ main {
 
 .dicas-manutencao ul {
     padding-left: 20px;
+    list-style: none;
 }
 
 .dicas-manutencao li {
     margin-bottom: 12px;
     line-height: 1.5;
+}
+
+/*momtangem*/
+.passos-montagem {
+    width: 80%;
+    margin: auto;
+}
+
+.passo {
+    width: 45%;
+
+    background-color: rgba(0, 35, 90, 0.8);
+
+    border: 1px solid rgb(0, 183, 255);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+.esquerda {
+    margin-right: auto;
+}
+
+.direita {
+    margin-left: auto;
 }
