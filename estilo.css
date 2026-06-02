@@ -112,6 +112,10 @@ section {
 
 
 }
+.centro {
+    display: flex;
+    justify-content: center;
+}
 
 
 
