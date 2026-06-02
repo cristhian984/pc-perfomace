@@ -526,3 +526,26 @@ main {
     max-width: 100%;
     flex-wrap: wrap;
 }
+.comprar{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.link-compra{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-compra a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #00aeff;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.link-compra a:hover{
+    background-color: #00aeff;
+}
