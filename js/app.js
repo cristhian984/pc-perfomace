@@ -1,8 +1,13 @@
-import app from "./js/app.js";
+const express = require("express");
+const app = express();
 
-const PORT = 3000;
+const PORT = 3000; // Executar na porta 3000
 
-// Executar a porta 3000
+// Rota Principal
+app.get("/", (req, res) => {
+    res.send("Rota principal")
+})
+
 app.listen(PORT, () => {
-    console.log(`Servidor rodando no endereço http://localhost:${PORT}`);
-});
+    console.log(`Servidor rodando no enndereço http://localhost:${PORT}`)
+})
