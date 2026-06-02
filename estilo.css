@@ -100,7 +100,7 @@ section {
     background: #01204d;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(16, 163, 231);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
@@ -148,6 +148,7 @@ form {
     border-radius: 12px;
     width: 500px;
     margin: 0 auto;
+    
 }
 
 form .form-group {
@@ -493,4 +494,35 @@ main {
 
 .direita {
     margin-left: auto;
+}
+.placa-mae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.cartoes-esquerda,
+.cartoes-direita{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cartao{
+    width: 250px;
+    min-height: 120px;
+    padding: 15px;
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    background-color: rgba(9, 90, 212, 0.3);
+    flex-wrap: wrap;
+}
+
+.imagem img{
+    width: 850px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
